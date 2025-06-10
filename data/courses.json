@@ -1,0 +1,43 @@
+[
+  {
+    "id": "18727d5f-5057-4cd5-bdec-33b602bab006",
+    "code": "CS101",
+    "name": "Introduction to Programming",
+    "description": "Basic programming concepts and problem-solving",
+    "instructor": "Dr. Sarah Johnson",
+    "department": "Computer Science",
+    "semester": "Fall 2024",
+    "credits": 3,
+    "schedule": {
+      "days": [
+        "Monday",
+        "Wednesday",
+        "Friday"
+      ],
+      "time": "09:00-10:00",
+      "room": "CS-201"
+    },
+    "enrolledStudents": [],
+    "createdAt": "2025-06-08T11:58:21.019Z"
+  },
+  {
+    "id": "ad57a759-1757-4aa9-9f78-c6515172377e",
+    "code": "CS201",
+    "name": "Data Structures",
+    "description": "Advanced data structures and algorithms",
+    "instructor": "Dr. Sarah Johnson",
+    "department": "Computer Science",
+    "semester": "Fall 2024",
+    "credits": 4,
+    "schedule": {
+      "days": [
+        "Tuesday",
+        "Thursday"
+      ],
+      "time": "10:00-11:30",
+      "room": "CS-202"
+    },
+    "enrolledStudents": [],
+    "createdAt": "2025-06-08T11:58:21.019Z"
+  }
+]
