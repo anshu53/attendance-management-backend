@@ -1,30 +1,11 @@
 [
   {
     "id": "a1abfc59-4c02-4c09-af78-099fe9ef3e82",
-    "email": "admin@college.edu",
+    "email": "anshuman.pandey@gmail.com",
     "password": "$2a$10$WV3qJTjBS9y9qWR4b7LgVOyZgIPBhL6OOEDf4n6AQA1dMs2mldECq",
     "name": "System Administrator",
     "role": "admin",
+    "status": "approved",
     "createdAt": "2025-06-08T11:58:20.301Z"
-  },
-  {
-    "id": "00275df4-4c47-40b0-8c3f-37184c740795",
-    "email": "teacher@college.edu",
-    "password": "$2a$10$GJPG6EFQ/x2PjyVgzIb6L.dJpZBlTHPUx4iIYLdB8pVSWh9D4B8e6",
-    "name": "Dr. Sarah Johnson",
-    "role": "teacher",
-    "department": "Computer Science",
-    "createdAt": "2025-06-08T11:58:20.655Z"
-  },
-  {
-    "id": "1ead0bf1-94f4-4925-8212-a61ad0a5d805",
-    "email": "student@college.edu",
-    "password": "$2a$10$tJro9y2Zte/kIuMK/erp5Odm7y3CKuwHCx8pzamgOdxRr9WMZRimm",
-    "name": "John Smith",
-    "role": "student",
-    "studentId": "CS2024001",
-    "department": "Computer Science",
-    "year": 2,
-    "createdAt": "2025-06-08T11:58:21.013Z"
   }
 ]

@@ -9,11 +9,16 @@ const {
   getStudentAttendance,
 } = require("../controllers/attendanceController");
 
-router.post("/mark", authenticate, authorizeRoles("teacher"), markAttendance);
+router.post(
+  "/mark",
+  authenticate,
+  authorizeRoles("teacher", "student"),
+  markAttendance
+);
 router.get(
   "/course/:courseId",
   authenticate,
-  authorizeRoles("teacher", "admin"),
+  authorizeRoles("teacher", "admin", "student"),
   getAttendanceByCourse
 );
 router.get(

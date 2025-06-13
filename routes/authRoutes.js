@@ -18,9 +18,21 @@ router.post("/login", async (req, res) => {
     return res.status(401).json({ message: "Invalid credentials" });
   }
 
+  // ❌ Block login if not approved (for student/teacher)
+  if (
+    (user.role === "student" || user.role === "teacher") &&
+    user.status !== "approved"
+  ) {
+    return res
+      .status(403)
+      .json({ message: "Your account is pending admin approval." });
+  }
+
+  // ✅ Admin login always allowed
   const token = jwt.sign({ id: user._id, role: user.role }, JWT_SECRET, {
     expiresIn: "24h",
   });
+
   const { password: _, ...userData } = user.toObject();
   res.json({ token, user: userData });
 });
@@ -39,6 +51,7 @@ router.post("/register", async (req, res) => {
     password: hashedPassword,
     name,
     role,
+    status: "pending",
     ...rest,
   });
   await user.save();
